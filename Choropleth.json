@@ -61,7 +61,7 @@
       "encode": {
         "enter": { "tooltip": {"signal": "format(datum.Amount, 's')"},"stroke": {"value": "black"},"fill": {"value": "#0000FF"}},
         "update": { "fill": {"scale": "color", "field": "Amount"} },
-        "hover": { "fill": {"value": "red"} }
+        "hover": { "fill": {"value": "orange"} }
       },
       "transform": [
         { "type": "geoshape", "projection": "projection" }
