@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@3.0.0-rc3"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
   <style>
-  #vis,#vis2{
+  #vis1,#vis2{
     width:50%;
   }
   </style>
@@ -18,8 +18,12 @@
 <body>
 
 <!-- Container for the visualization -->
-<div id="vis" align="right" ></div>
-<div id="vis2" ></div>
+<table>
+  <tr>
+    <td><div id="vis1" align="right" ></div></td>
+    <td><div id="vis2" align="left"></div></td>
+  </tr>
+</table>
 
 <script type="text/javascript">
 
@@ -28,7 +32,7 @@
 
   var spec = "https://raw.githubusercontent.com/krishreddy56/Visual-Analytics/master/barchart.json";
 
-  vegaEmbed('#vis', spec).then(function(result) {
+  vegaEmbed('#vis1', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   var spec = "https://raw.githubusercontent.com/krishreddy56/Visual-Analytics/master/Choropleth.json";
